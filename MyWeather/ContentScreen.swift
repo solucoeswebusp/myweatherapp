@@ -6,7 +6,7 @@
 import CoreLocation
 import SwiftUI
 
-struct ContentView: View {
+struct ContentScreen: View {
     @EnvironmentObject private var weatherModel: CityWeatherModel
     @EnvironmentObject private var locationManager: LocationManager
 
@@ -139,6 +139,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentScreen()
         .environmentObject(CityWeatherModel(weatherHTTPClient: WeatherHTTPClientImplementation()))
 }

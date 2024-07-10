@@ -9,7 +9,7 @@ import SwiftUI
 struct MyWeatherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentScreen()
                 .environmentObject(CityWeatherModel(weatherHTTPClient: WeatherHTTPClientImplementation()))
                 .environmentObject(LocationManager())
         }
